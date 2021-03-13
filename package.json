@@ -1,0 +1,21 @@
+{
+  "name": "Clock",
+  "version": "1.0.0",
+  "description": "An analog clock",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve -s ./",
+    "open": "chrome http://localhost:5000",
+    "open-youtube": "chrome https://www.youtube.com/"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Mohd Faiz & Abdul Samad",
+    "email": "asmalik.dev@gmail.com",
+    "url": "asmalik.site"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}

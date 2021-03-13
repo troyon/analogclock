@@ -1,0 +1,41 @@
+{
+  "name": "Clock",
+  "description": "Beautiful Analog Clock",
+  "short_name": "Clock",
+  "start_url": "/",
+  "lang": "en",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "prefer_related_applications": false,
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icons/icon_x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon_x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon_x48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "any"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "enctype": "application/x-www-form-urlencoded",
+    "method": "GET",
+    "params": {
+      "text": "description",
+      "title": "name"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+body {
+    overflow: hidden;
+    background: #000000;
+}
+
+.clock-body {
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 35px solid #ffffff;
+    box-shadow: 0px 0px 16px 6px #000000bf;
+    background: #000000;
+}
+
+.clock-body::after {
+    --size: 14px;
+    content: '';
+    height: var(--size);
+    width: var(--size);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+
+.hour-hand,
+.min-hand,
+.sec-hand {
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.hour-hand::after,
+.min-hand::after,
+.sec-hand::after {
+    /* clip-path: polygon(50% 0, 57% 70%, 53% 100%, 46% 71%); */
+    /* clip-path: polygon(50% 0, 55% 85%, 50% 99%, 45% 85%); */
+    clip-path: polygon(50% 1%, 53% 91%, 50% 100%, 47% 91%);
+    content: '';
+    border-radius: 50px 50px 0 0;
+    background: white;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -90%);
+}
+
+.hour-hand::after {
+    height: 30%;
+    width: 160px;
+    z-index: 0;
+    background: #ff0000;
+}
+
+.min-hand::after {
+    height: 35%;
+    width: 100px;
+    z-index: 1;
+    background: white;
+}
+
+.sec-hand::after {
+    height: 40%;
+    width: 45px;
+    z-index: 2;
+    background: #ffffff;
+}
