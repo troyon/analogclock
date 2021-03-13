@@ -12,3 +12,7 @@ setInterval(() => {
   min.style.transform = `rotateZ(${mins * 5}deg)`
   sec.style.transform = `rotateZ(${secHandRotation}deg)`
 }, 1000 / FPS)
+
+if (window.innerHeight > window.innerWidth) {
+  document.body.classList.add("mobile")
+}

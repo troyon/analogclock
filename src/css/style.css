@@ -76,3 +76,9 @@ body {
     z-index: 2;
     background: #ffffff;
 }
+
+body.mobile .clock-body {
+    height: 70vw;
+    width: 70vw;
+    border-width: 20px;
+}
