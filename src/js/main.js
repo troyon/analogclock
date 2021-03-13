@@ -1,9 +1,4 @@
-let FPS = 1
-
-// const audio = new Audio()
-// audio.src = "/assets/ticksound.mp3"
-// document.body.append(audio)
-// audio.autoplay = "true"
+let FPS = 60
 
 setInterval(() => {
   const date = new Date()

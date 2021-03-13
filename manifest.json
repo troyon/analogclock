@@ -11,31 +11,22 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "assets/icons/icon_x512.png",
+      "src": "src/assets/icons/icon_x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "assets/icons/icon_x192.png",
+      "src": "src/assets/icons/icon_x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "assets/icons/icon_x48.png",
+      "src": "src/assets/icons/icon_x48.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "any"
     }
-  ],
-  "share_target": {
-    "action": "/share",
-    "enctype": "application/x-www-form-urlencoded",
-    "method": "GET",
-    "params": {
-      "text": "description",
-      "title": "name"
-    }
-  }
+  ]
 }
